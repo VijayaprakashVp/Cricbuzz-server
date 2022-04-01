@@ -18,6 +18,10 @@ const VideosController = require("./controllers/videos.controller");
 const PhotosController = require("./controllers/photos.controller");
 const RankingController = require("./controllers/ranking.controller");
 
+app.get("/", function (req, res) {
+  return res.redirect("https://faballey-clone.vercel.app/");
+});
+
 app.use("/news", NewsController);
 app.use("/latestphoto", LatestPhotoController);
 app.use("/feed", FeedController);

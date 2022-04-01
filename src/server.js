@@ -1,8 +1,15 @@
 const app = require("../index");
+require("dotenv").config();
 
 const connect = require("./Configs/db");
 
-app.listen(8080, async () => {
-  await connect();
-  console.log("Listining to the  port 8080");
+const port = process.env.PORT || 8080;
+
+app.listen(port, async () => {
+  try {
+    await connect();
+    console.log("Listening to the  port 8080");
+  } catch (e) {
+    console.log(e.message);
+  }
 });

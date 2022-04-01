@@ -1,4 +1,4 @@
-const Feed = require("../Models/feed.model");
+const Feed = require("../models/feed.model");
 const express = require("express");
 
 const router = express.Router();

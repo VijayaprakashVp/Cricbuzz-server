@@ -9,14 +9,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const NewsController = require("./Controllers/news.controller");
-const LatestPhotoController = require("./Controllers/latest_photos.controller");
-const FeedController = require("./Controllers/feed.controller");
-const MiniFeedController = require("./Controllers/minifeed.controller");
-const ScheduleController = require("./Controllers/schedule.controller");
-const VideosController = require("./Controllers/videos.controller");
-const PhotosController = require("./Controllers/photos.controller");
-const RankingController = require("./Controllers/ranking.controller");
+const NewsController = require("./controllers/news.controller");
+const LatestPhotoController = require("./controllers/latest_photos.controller");
+const FeedController = require("./controllers/feed.controller");
+const MiniFeedController = require("./controllers/minifeed.controller");
+const ScheduleController = require("./controllers/schedule.controller");
+const VideosController = require("./controllers/videos.controller");
+const PhotosController = require("./controllers/photos.controller");
+const RankingController = require("./controllers/ranking.controller");
 
 app.use("/news", NewsController);
 app.use("/latestphoto", LatestPhotoController);

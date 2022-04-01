@@ -1,4 +1,4 @@
-const MiniFeed = require("../Models/minifeed.model");
+const MiniFeed = require("../models/minifeed.model");
 const express = require("express");
 
 const router = express.Router();

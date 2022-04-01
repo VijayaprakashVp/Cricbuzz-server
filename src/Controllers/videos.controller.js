@@ -1,4 +1,4 @@
-const Videos = require("../Models/videos.model");
+const Videos = require("../models/videos.model");
 const express = require("express");
 
 const router = express.Router();

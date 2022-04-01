@@ -1,4 +1,4 @@
-const News = require("../Models/news.models");
+const News = require("../models/news.models");
 const express = require("express");
 
 const router = express.Router();

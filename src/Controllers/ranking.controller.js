@@ -1,4 +1,4 @@
-const Ranking = require("../Models/ranking.model");
+const Ranking = require("../models/ranking.model");
 const express = require("express");
 
 const router = express.Router();

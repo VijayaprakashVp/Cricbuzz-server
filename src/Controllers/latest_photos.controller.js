@@ -1,4 +1,4 @@
-const Latest_photos = require("../Models/latest_photos.model");
+const Latest_photos = require("../models/latest_photos.model");
 const express = require("express");
 
 const router = express.Router();

@@ -1,4 +1,4 @@
-const Schedule = require("../Models/schedule.model");
+const Schedule = require("../models/schedule.model");
 const express = require("express");
 
 const router = express.Router();

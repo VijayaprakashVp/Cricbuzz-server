@@ -1,0 +1,31 @@
+const express = require("express");
+// const mongoose = require("mongoose");
+// const connect = require("./src/Configs/db");
+const cors = require("cors");
+require("dotenv").config();
+
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+const NewsController = require("./Controllers/news.controller");
+const LatestPhotoController = require("./Controllers/latest_photos.controller");
+const FeedController = require("./Controllers/feed.controller");
+const MiniFeedController = require("./Controllers/minifeed.controller");
+const ScheduleController = require("./Controllers/schedule.controller");
+const VideosController = require("./Controllers/videos.controller");
+const PhotosController = require("./Controllers/photos.controller");
+const RankingController = require("./Controllers/ranking.controller");
+
+app.use("/news", NewsController);
+app.use("/latestphoto", LatestPhotoController);
+app.use("/feed", FeedController);
+app.use("/minifeed", MiniFeedController);
+app.use("/schedule", ScheduleController);
+app.use("/videos", VideosController);
+app.use("/photos", PhotosController);
+app.use("/ranking", RankingController);
+// app.use("/player_rankings", RankingController);
+
+module.exports = app;

@@ -1,5 +1,5 @@
 {
-  "name": "cricbuzz-server",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,17 +9,9 @@
     "server": "nodemon ./src/server.js",
     "dev": "nodemon ./src/server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VijayaprakashVp/Cricbuzz-server.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/VijayaprakashVp/Cricbuzz-server/issues"
-  },
-  "homepage": "https://github.com/VijayaprakashVp/Cricbuzz-server#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",

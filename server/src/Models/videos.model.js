@@ -1,4 +1,6 @@
-const mongoose = require('mongoose');
+// Videos Model
+
+const mongoose = require("mongoose");
 
 const videosSchema = new mongoose.Schema(
   {
@@ -11,6 +13,6 @@ const videosSchema = new mongoose.Schema(
   { timestamps: true, versionKey: false },
 );
 
-const videos = new mongoose.model('videos', videosSchema);
+const videos = new mongoose.model("videos", videosSchema);
 
 module.exports = videos;
